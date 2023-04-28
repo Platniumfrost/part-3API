@@ -1,0 +1,42 @@
+### get tooele tech route
+GET http://localhost:3000/ttech HTTP/1.1
+
+### get the root path /
+GET http://localhost:3000/ HTTP/1.1
+
+### get all students
+GET http://localhost:3000/students HTTP/1.1
+
+
+### get one student
+Get http://localhost:3000/students/644933f12af96eea5a3f94bd
+
+### create a student
+POST http://localhost:3000/students HTTP/1.2 
+Content-Type: application/json
+
+{
+    "firstName": "burrning",
+    "lastName": "up ",
+    "email": "forever@gmail.com",
+    "age": 40,
+    "currentCollege": "University of Utah"
+}
+
+### update student
+PUT http://localhost:3000/students/644bdb916680e4d76511dc5f HTTP/1.2
+Content-Type: application/json
+
+
+{
+    "firstName": "testingAgain",
+    "lastName": "updateFunction ",
+    "email": "learnin@gmail.com",
+    "age": 20,
+    "currentCollege": "University of Ut"
+}
+
+
+
+### delete one Student
+DELETE http://localhost:3000/students/644bd654b13819386408a011
